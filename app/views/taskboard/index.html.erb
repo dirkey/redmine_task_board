@@ -34,7 +34,7 @@
                   <p class="issue-number meta">
                     <input type="checkbox" name="ids[]" value="<%= issue.id.to_s %>" />
                     <%= link_to "#{issue.tracker} ##{issue.id.to_s}", :controller => :issues, :action => :show, :id => issue.id %>
-                    <% if defined? issue.fixed_version %>
+                    <% if issue.fixed_version %>
                 		<%= issue.fixed_version.name %>
                     <% end %>
                   </p>
