@@ -40,6 +40,7 @@ var TaskBoardFilters = Class.extend({
   filters: {
     priority: 0,
     category: 0,
+    fixed_version: 0,
     assignee: 0, // only used on project taskboard
     project: 0 // only used on "my" taskboard
   },
